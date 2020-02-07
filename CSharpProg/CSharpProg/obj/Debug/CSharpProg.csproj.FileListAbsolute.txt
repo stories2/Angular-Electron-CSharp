@@ -1,0 +1,6 @@
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Debug\CSharpProg.exe.config
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Debug\CSharpProg.exe
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Debug\CSharpProg.pdb
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\obj\Debug\CSharpProg.csprojResolveAssemblyReference.cache
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\obj\Debug\CSharpProg.exe
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\obj\Debug\CSharpProg.pdb

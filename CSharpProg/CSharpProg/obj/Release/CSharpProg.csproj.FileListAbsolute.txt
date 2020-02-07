@@ -1,0 +1,5 @@
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Release\CSharpProg.exe.config
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Release\CSharpProg.exe
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\bin\Release\CSharpProg.pdb
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\obj\Release\CSharpProg.exe
+C:\Users\media\Documents\GitHub\Angular-Electron-CSharp\CSharpProg\CSharpProg\obj\Release\CSharpProg.pdb
