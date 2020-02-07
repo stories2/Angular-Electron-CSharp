@@ -1,0 +1,8 @@
+{
+    "name": "my-app",
+    "productName": "my-app",
+    "version": "1.0.0",
+    "description": "description",
+    "main": "electron.prod.js",
+    "license": "MIT"
+}
