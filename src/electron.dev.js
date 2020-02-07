@@ -66,4 +66,10 @@ app.on('activate', () => {
     }
 });
 
+ipcMain.on('ping', (event, arg) => {
 
+    console.log('[electron] [ping] arg', arg);
+    event.sender.send('pong', {
+        msg: 'ping - pong'
+    })
+})
