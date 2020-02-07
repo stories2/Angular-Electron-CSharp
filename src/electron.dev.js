@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const url = require('url');
+let spawn = require("child_process").spawn;
   
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -72,4 +73,45 @@ ipcMain.on('ping', (event, arg) => {
     event.sender.send('pong', {
         msg: 'ping - pong'
     })
+})
+
+ipcMain.on('run-csharp', (event, arg) => {
+
+    console.log('[electron] [run-csharp] arg', arg);
+    event.sender.send('pong', {
+        msg: 'ping - pong'
+    })
+})
+
+ipcMain.on('cscript', (event, arg) => {
+    let result = {
+        code: arg.code,
+        status: -1,
+        msg: null,
+        console: null
+    }
+
+    console.log('arg', arg);
+
+    let bat = spawn("cscript.exe", arg.args);
+    
+    bat.stdout.on("data", (data) => {
+        // Handle data...
+        console.log('stdout data',data, JSON.stringify(data))
+        result.console += data;
+    });
+    
+    bat.stderr.on("data", (err) => {
+        // Handle error...
+        console.log('stderr', err);
+        result.msg = err.message
+    });
+    
+    bat.on("exit", (code) => {
+        // Handle exit
+
+        result.status = code;
+        console.log('result', result, JSON.stringify(result.console));
+        event.sender.send('job', result);
+    });
 })
